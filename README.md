@@ -68,3 +68,39 @@ If you're running the application in a Docker container, you'll likely won't see
 To verify that the client is running successfully, visit the URL "[http://localhost:3000](http://localhost:3000/)". You should see an empty form with a blue button that says "Continue", as shown in the picture below:
 
 ![](https://storage.googleapis.com/hatchways.appspot.com/employers/assessmentTemplates/StartingForm.png)
+
+# Assessment
+![image](https://github.com/Outset-AI/autocomplete-design/assets/112057463/63493b29-c11b-43ed-8336-3130aff6c07c)
+
+In this part of the assessment, you will need to create input fields (street, city, state, postal code, country) and connect the provided handleChange function to the input fields. These inputs should be controlled, and their values should be taken from the provided inputValues state.
+
+Please note that styling is NOT part of the assessment.
+
+When the value of each input field changes, the getAutocompleteData function (already provided) should be automatically triggered. This data should be used to display the autocomplete options for each of the input fields.
+
+For example:
+
+![image](https://github.com/Outset-AI/autocomplete-design/assets/112057463/92f73c8e-61f6-4455-93e4-e1f4c12772c7)
+
+
+Please note that each input field should work like an "autocomplete" input field, displaying the available options for that field, and filtering the options as the user types in the input.
+
+When the user selects one of the options in one field, if there is only a single option available in all other fields, then the remaining fields should auto-populate with the only available option. For example, when a postal code is selected, because there is only one address at the selected postal code, all the remaining fields are auto-populated:
+
+![image](https://github.com/Outset-AI/autocomplete-design/assets/112057463/1faa2a87-a3d1-47f5-a81e-265c6861f5e4)
+
+
+Please note that all the input fields should have data validation, so that an invalid street, city, state, postal code, or country can’t be selected.
+
+![image](https://github.com/Outset-AI/autocomplete-design/assets/112057463/fd4f3731-adc7-47db-8cc3-ab24b788c3a7)
+
+
+The list of allowed addresses can be found in the "server/addressData.js" file.
+
+When the "Continue" button is clicked, the handleFormSubmit function (already provided) will be run. This function will send the inputValues to the server.
+
+Please note that CSS styles already applied by default to certain HTML elements to style the application. You don’t need to add any additional CSS.
+
+Additional Considerations:
+
+Please implement a way of reducing the number of API requests that are being made to the back-end when the user types on the input fields.
