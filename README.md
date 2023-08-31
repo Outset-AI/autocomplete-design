@@ -88,12 +88,12 @@ Please note that each input field should work like an "autocomplete" input field
 
 When the user selects one of the options in one field, if there is only a single option available in all other fields, then the remaining fields should auto-populate with the only available option. For example, when a postal code is selected, because there is only one address at the selected postal code, all the remaining fields are auto-populated:
 
-![image](https://github.com/Outset-AI/autocomplete-design/assets/112057463/1faa2a87-a3d1-47f5-a81e-265c6861f5e4)
+![223530471-df2a718e-16e4-4403-ac44-221290ae15b1](https://github.com/Outset-AI/autocomplete-design/assets/112057463/a2608093-083e-4f73-a5d4-9ee7bf6552f2)
 
 
 Please note that all the input fields should have data validation, so that an invalid street, city, state, postal code, or country can’t be selected.
 
-![image](https://github.com/Outset-AI/autocomplete-design/assets/112057463/fd4f3731-adc7-47db-8cc3-ab24b788c3a7)
+![223530306-65843fe5-2693-4151-9f59-4bbc4ffcd3e1](https://github.com/Outset-AI/autocomplete-design/assets/112057463/4597509d-244b-4dc4-ae5b-155274ce14f8)
 
 
 The list of allowed addresses can be found in the "server/addressData.js" file.
