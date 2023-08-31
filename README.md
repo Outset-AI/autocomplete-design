@@ -80,7 +80,8 @@ When the value of each input field changes, the getAutocompleteData function (al
 
 For example:
 
-![image](https://github.com/Outset-AI/autocomplete-design/assets/112057463/92f73c8e-61f6-4455-93e4-e1f4c12772c7)
+![223530330-bb24634f-f7d2-46f7-a12a-7a10818d1470](https://github.com/Outset-AI/autocomplete-design/assets/112057463/5bc431e5-b03e-4ef2-90fb-da80cab57f83)
+
 
 
 Please note that each input field should work like an "autocomplete" input field, displaying the available options for that field, and filtering the options as the user types in the input.
